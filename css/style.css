@@ -1,0 +1,97 @@
+/********************
+  GLOBAL SETTINGS
+********************/
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
+}
+
+/********************
+  SEARCH
+********************/
+.search {
+	text-align: center;
+}
+input {
+	font-size: 16px;
+	padding: 15px 5px;
+	border-radius: 2px;
+	margin: 20px auto;
+}
+
+/********************
+  GALLERY
+********************/
+ul {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1054px;
+	display: block;
+	list-style:none;
+}
+ul li {
+	margin: 30px;
+	padding: 0;
+	display: inline-block;
+}
+ul li img {
+	display: block;
+}
+.hide {
+	display: none;
+}
+
+/********************
+  LIGHTBOX
+********************/
+.featherlight .featherlight-content  {
+	text-align: center;
+	background: rgba(25,25,25,0.8);
+	border-radius: 2%;
+	overflow: inherit;
+}
+.featherlight .featherlight-image {
+	max-width: 750px;
+}
+.caption {
+	color: #fff;
+	font-size: 16px;
+	max-width: 600px;
+	text-align: center;
+	margin: 10px auto;
+}
+.featherlight .featherlight-close-icon {
+	background: rgba(25,25,25,0.8);
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/****************************
+  LARGER SCREENS
+****************************/
+@media screen and (min-width: 1040px) {
+
+input {
+	width: 460px;
+}
+.featherlight-next span, .featherlight-previous span {
+	display: inline-block;
+	font-size: 50px;
+}
+.featherlight-next:hover, .featherlight-previous:hover {
+	background:none;
+}
+.featherlight-next, .featherlight-previous {
+    width: 10%;
+}
+.featherlight-next {
+	right: -8%;
+	left: 100%;
+}
+.featherlight-previous {
+	left: -8%;
+	right: 100%;
+}
+}
